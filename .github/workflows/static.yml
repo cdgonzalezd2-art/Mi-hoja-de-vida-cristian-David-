@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <style>
+        body {
+            background-image: url('https://i.ibb.co/6RGjMj9N/1000066679.jpg');
+            background-size: contain; /* Ajusta la imagen para que se vea completa */
+            background-repeat: no-repeat; /* Evita que se repita */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* Hace que la imagen quede fija al hacer scroll */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+            /* Fondo blanco semi-transparente para que el texto sea legible */
+            background-color: rgba(255, 255, 255, 0.8);
+            background-blend-mode: lighten;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 3em;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .datos-personales {
+            font-size: 1em;
+            color: red;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .datos-personales img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+
+        .datos-personales span {
+            font-size: 0.9em;
+            text-decoration: underline;
+            color: black;
+            font-weight: bold;
+        }
+
+        .descripcion-personal {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            font-style: italic;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            border: 3px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 600px) {
+            .datos-personales {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .datos-personales img {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Hoja de Vida</h1>
+    <div class="datos-personales">
+        <img src="https://i.ibb.co/3YdMBtCt/1000060488.jpg" alt="Foto de Cristian">
+        <div>
+            <p>Nombre: <span>Cristian</span></p>
+            <p>Apellido: <span>González</span></p>
+            <p>Edad: <span>17 años</span></p>
+            <p>Fecha de nacimiento: <span>05/10/2008</span></p>
+        </div>
+    </div>
+    <p class="descripcion-personal">
+        Soy un joven apasionado por la producción agropecuaria que actualmente estoy cursando 
+        el programa de Técnico en Producción Agropecuaria en el SENA. Paralelamente, estoy 
+        terminando mis estudios en el colegio, lo que me permite combinar mis habilidades técnicas 
+        con una sólida formación académica.
+    </p>
+
+    <!-- Título de la tabla -->
+    <h2>Asignaturas que evalúa el ICFES</h2>
+
+    <table>
+        <tr>
+            <th>Materia</th>
+            <th>N1</th>
+            <th>N2</th>
+            <th>Promedio</th>
+        </tr>
+        <tr>
+            <td>Matemáticas</td>
+            <td>8.5</td>
+            <td>9.5</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>Sociales</td>
+            <td>8.0</td>
+            <td>8.5</td>
+            <td>8.25</td>
+        </tr>
+        <tr>
+            <td>Inglés</td>
+            <td>8.3</td>
+            <td>8.5</td>
+            <td>8.4</td>
+        </tr>
+        <tr>
+            <td>Lectura crítica</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>8.75</td>
+        </tr>
+        <tr>
+            <td>Naturales</td>
+            <td>9.0</td>
+            <td>8.6</td>
+            <td>8.8</td>
+        </tr>
+    </table>
+</body>
+</html>
